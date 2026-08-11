@@ -1,6 +1,6 @@
-# Privacy Policy — GHL Workflow JSON Exporter
+# Privacy Policy — GHL Workflow Backup & Audit
 
-**Last updated:** 2026-08-09
+**Last updated:** 2026-08-11
 
 This extension is built to export your own GoHighLevel workflow data for your
 own use. This policy explains exactly what data it touches, where it goes, and
@@ -80,4 +80,4 @@ Chrome Web Store listing before the change takes effect.
 
 ## Contact
 
-Questions about this policy: **unfoldingdimensions@gmail.com**
+Questions about this policy: **benji@remotesalesinstitute.com**
