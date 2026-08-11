@@ -80,4 +80,4 @@ Chrome Web Store listing before the change takes effect.
 
 ## Contact
 
-Questions about this policy: **benji@remotesalesinstitute.com**
+Questions about this policy: **unfoldingdimensions@gmail.com**
