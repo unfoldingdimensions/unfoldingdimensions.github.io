@@ -73,18 +73,18 @@ The extension never transmits this token anywhere else.
 
 ## Licensing and payment (paid version)
 
-If you purchase a license, checkout is handled entirely by **Razorpay**, our
-payment processor — the extension never sees or stores your payment card
-details. After a successful payment, Razorpay sends us the email address you
-paid with, and we generate a license key tied to it. The extension stores
-only that license key locally (`chrome.storage.local`) and sends it to our
-license-verification server to confirm it's valid. We do not sell, rent, or
-share your email address or license information with any third party other
-than Razorpay (as required to process the transaction) and our
-license-verification infrastructure.
+If you purchase a license, checkout is handled entirely by a third-party
+payment provider acting as the merchant of record. The extension never sees or
+stores your payment card details. After a successful payment they send us the
+email address you paid with, and we generate a license key tied to it. The
+extension stores only that license key locally (`chrome.storage.local`) and
+sends it to our license-verification server to confirm it's valid. We do not
+sell, rent, or share your email address or license information with any third
+party other than our payment provider (as required to process the transaction)
+and our license-verification infrastructure.
 
-See the [Terms of Sale & Refund Policy](/Terms) for pricing, delivery and
-refund terms.
+See the [Terms of Sale & Refund Policy](https://unfoldingdimensions.com/terms)
+for pricing, delivery and refund terms.
 
 ## What we never collect
 
