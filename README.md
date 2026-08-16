@@ -17,6 +17,32 @@ from the page or GoHighLevel's own API; the extension does not access any
 other GoHighLevel account or any data outside the workflow(s) you choose to
 export.
 
+### How it reads workflow data (network response inspection)
+
+GoHighLevel's workflow builder does not expose a workflow's full step-tree in
+the page's HTML, and its public API does not return one either. To assemble a
+complete export, the extension therefore does two things on GoHighLevel pages:
+
+1. **Reads the builder's in-memory state** (its JavaScript application data)
+   for the workflow you have open.
+2. **Inspects the responses of network requests the GoHighLevel page itself
+   makes**, as a fallback when in-memory state isn't available, and to learn the
+   names of items referenced by the workflow. It does this by wrapping the
+   page's own `fetch` and `XMLHttpRequest` so it can read response bodies as
+   they arrive.
+
+This inspection is limited to responses from GoHighLevel's own domains
+(`gohighlevel.com`, `leadconnectorhq.com`, `msgsndr.com`) and the Firebase
+datastore its builder uses. Requests to any other domain, and static assets
+(scripts, stylesheets, images, fonts, media), are ignored and never read.
+
+Response data is used only to build the export file you asked for, is held in
+memory for the duration of the capture, and is **never transmitted to us or to
+any third party**. It goes only to the destination you choose below. The
+extension does not read, record, or transmit your browsing activity on any
+other site — its content scripts run only on the GoHighLevel domains listed in
+its manifest.
+
 ## Where that data goes
 
 You control the destination in the extension's Options page:
@@ -56,6 +82,9 @@ license-verification server to confirm it's valid. We do not sell, rent, or
 share your email address or license information with any third party other
 than Razorpay (as required to process the transaction) and our
 license-verification infrastructure.
+
+See the [Terms of Sale & Refund Policy](/Terms) for pricing, delivery and
+refund terms.
 
 ## What we never collect
 
