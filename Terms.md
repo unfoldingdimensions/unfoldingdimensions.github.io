@@ -16,9 +16,9 @@ license is required to continue exporting.
 
 ## Price and payment
 
-The price is shown at checkout before you pay. Payment is processed by
-**Razorpay**; we never receive or store your card details. Depending on your
-country, tax may be added at checkout.
+The price is **$9.99 USD, once**, and the amount shown at checkout is the amount
+you pay. Checkout is handled by a third-party payment processor — we never
+receive or store your card details.
 
 ## Delivery
 
@@ -37,8 +37,8 @@ would.
 
 To request one, email the address below from the address you purchased with,
 with a short description of the problem. Refunds are returned to the original
-payment method via Razorpay; the funds typically take 5–10 business days to
-appear, depending on your bank.
+payment method; the funds typically take 5 to 10 business days to appear,
+depending on your bank.
 
 We may decline a refund where there is clear evidence of abuse — for example,
 refund requests made after exporting a large volume of workflows, or repeated
